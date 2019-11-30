@@ -68,9 +68,10 @@ report_dictionary = dict([
 print(header)
 for key, val in report_dictionary.items():
     print(key, val)
+print()
 
 # Write to file
-f = open("report.txt","w",encoding="utf8")
+f = open("Financial_Analysis_Report.txt","w",encoding="utf8")
 f.writelines(f"{header}\n")
 for key, val in report_dictionary.items():
     f.writelines(f"{key} {val}\n")
